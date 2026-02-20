@@ -1,4 +1,3 @@
-```markdown
 # 🚀 React Experiment 4 – State Management Dashboard
 
 ## 👨‍💻 Student Details
@@ -134,9 +133,3 @@ This project successfully demonstrates advanced React Hooks and structured state
 
 All Experiment 4 requirements have been properly implemented and tested.
 ```
-
----
-
-
-* One-page project summary
-* Git commit message template for submission
