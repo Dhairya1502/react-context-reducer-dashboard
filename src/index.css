@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  transition: all 0.3s ease;
+}
+
+/* LIGHT THEME */
+.light {
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  color: #222;
+  min-height: 100vh;
+}
+
+/* DARK THEME */
+.dark {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.2);
+}
+
+.dark .navbar {
+  background: rgba(0,0,0,0.3);
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: inherit;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Card */
+.card {
+  padding: 25px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.dark .card {
+  background: #1e293b;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+/* 
+/* Base Button */
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  min-width: 100px;
+}
+
+/* Complete Button */
+.btn-complete {
+  background-color: #16a34a;   /* strong green */
+  color: white;
+}
+
+.btn-complete:hover {
+  background-color: #15803d;
+}
+
+/* Delete Button */
+.btn-delete {
+  background-color: #dc2626;   /* strong red */
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+}
+
+/* Disabled state (optional future use) */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.2);
+  margin-top: 60px;
+}
+
+.dark .footer {
+  background: rgba(0,0,0,0.3);
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.completed-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
